@@ -12,6 +12,8 @@
  *= require_tree .
 */
 
-.formTextField { width:70%; }
-.formBtn { width:15%; }
-table{ width : 100%; }
+.formTextField {width:70%;}
+.formBtn {width:15%;}
+#main{display:table; width:100%}
+.row{display:table-row;}
+.col{display:table-cell; width:35%;}
