@@ -20,3 +20,16 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'private_pub'
 gem 'thin'
+
+group :test do
+  gem "factory_girl_rails"
+  gem "cucumber-rails"
+  gem "capybara"
+  gem "webrat"
+  gem "pickle"
+  gem "database_cleaner"
+end
+
+group :development, :test do
+  gem "debugger"
+end
