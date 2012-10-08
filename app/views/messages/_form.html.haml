@@ -1,0 +1,6 @@
+%td
+  = form_for message, :remote => true do |form|
+    = form.text_field :content, :id => "message_content_#{message.id}", :class => "formTextField"
+    = form.submit :class => "formBtn"
+
+= subscribe_to "/messages/new/#{message.id}"

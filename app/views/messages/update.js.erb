@@ -1,0 +1,3 @@
+<% publish_to "/messages/new/#{@message.id}" do %>
+  $("#message_content_<%=@message.id%>").attr("value", "<%= @message.content %>");
+<% end %>

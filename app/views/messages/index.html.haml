@@ -1,0 +1,4 @@
+%table
+  - @messages.each_with_index do |message, index|
+    %tr
+      = render :partial => "form", :locals => {:message => message, :index => index}
